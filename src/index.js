@@ -9,10 +9,10 @@ const svg = select("body")
   .append("svg")
   .attr("width", width)
   .attr("height", height);
-console.log("hello");
+console.log(svg);
 let t = 0;
 setInterval(() => {
-  const n = Math.sin(t) * 15;
+  const n = 10 + Math.sin(t) * 10;
   const data = makeData(n, t);
   svg.call(vizData, data);
   // vizData(svg, data);
